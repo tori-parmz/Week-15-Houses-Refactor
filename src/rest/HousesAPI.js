@@ -16,6 +16,7 @@ class HousesApi {
     put = async (house) => {
         try {
             const resp = await fetch(`${HOUSES_ENDPOINT}/${house._id}`, {
+                method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -29,4 +30,4 @@ class HousesApi {
     }
 }
 
-export const housesApi = new HousesApi;
+export const HousesApi = new HousesApi;

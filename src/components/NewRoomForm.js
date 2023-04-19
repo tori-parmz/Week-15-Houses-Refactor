@@ -19,7 +19,7 @@ export const NewRoomForm = (props) => {
             console.log('invalid input');
         }
     }
-};
+
 
 return (
     <div>
@@ -40,3 +40,4 @@ return (
         </form>
     </div>
 )
+};

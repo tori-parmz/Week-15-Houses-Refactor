@@ -1,11 +1,13 @@
 import React from "react";
-import { House } from "./House";
-import {HousesApi} from "./rest/HousesApi";
+import House from "./House";
+import HousesApi from "../rest/HousesApi";
 
 export default class HousesList extends React.Component {
-    state = {
-        houses : []
-    };
+        state = {
+            houses : []
+        };
+   
+    
 
     componentDidMount() {
         this.fetchHouses();
