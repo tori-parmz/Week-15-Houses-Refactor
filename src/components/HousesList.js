@@ -1,10 +1,10 @@
 import React from "react";
-import { House } from "./house";
+import { House } from "./House";
 import {HousesApi} from "./rest/HousesApi";
 
 export default class HousesList extends React.Component {
     state = {
-        houses = []
+        houses : []
     };
 
     componentDidMount() {
@@ -36,5 +36,5 @@ export default class HousesList extends React.Component {
     }
 
 
-}
+};
 
